@@ -1,0 +1,18 @@
+>>>What is scope? Your explanation should include the idea of global vs. local scope.
+Scope is the view the browser has of a variable. 
+If a variable has been defined outside of any function block, it is considered in global view since there is no function relative to it. 
+Otherwise, the view is considered a local scope.
+A variable that is defined in a parent function can be called in a child function and still be considered local scope. 
+To find the variable in question, no matter how many parent functions the scope expands to, it will still be considered in local scope. 
+
+>>Why are global variables avoided?
+Since global variables can be easily accessed by any function, its value can also be changed by any function as well. 
+Being exposed without limitations can lead to unwanted results.
+
+>>>Explain JavaScript's strict mode
+Strict mode is put in place at the top of the file, or the preferred function, 
+to ensure that all variables have been created with let or const.
+
+>>>What are side effects, and what is a pure function?
+Side effects are results of global variables that produce irregular outputs causing a function to be labeled as indeterminate.
+A pure function is one where its code is consistent with results and does exactly as expected. 
